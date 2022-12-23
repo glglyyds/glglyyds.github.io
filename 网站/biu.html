@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/头像.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咕噜咕噜</title>
+   <link rel="stylesheet" href="./css/header.css">
+   <link rel="stylesheet" href="./css/swiper.min.css">
+   <link rel="stylesheet" href="./css/center.css">
+</head>
+<style>
+    body{
+        margin: 0;
+        background: url(./img/bj.jpg)no-repeat;
+        background-size: 100%;
+    }
+    ul,li{
+        list-style: none;
+        line-height: 0;
+    }
+</style>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <img src="https://www.tencent.com/img/index/menu_logo.png" alt="">
+        <ul>
+            <li>首页</li>
+            <li>咕噜咕噜</li>
+            <li>咕噜咕噜</li>
+            <li>咕噜咕噜</li>
+            <li>咕噜咕噜</li>
+        </ul>
+        <img src="./img/头像.png" alt="" class="userimg">
+    </div>
+
+    <!-- 内容 -->
+    <div class="center-box">
+        <!-- 轮播图 -->
+        <div class="swiper">
+            <div class="swiper-container bannerPc banner-swiper banner-swiper1">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#"> <img src="./img/lunbo1.png" alt="" title=""/></a></li>
+                    <li class="swiper-slide"><a href="#"> <img src="./img/lunbo2.png" alt="" title=""/></a></li>
+                    <li class="swiper-slide"><a href="#"> <img src="./img/lunbo3.png" alt="" title=""/></a></li>
+                </ul>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div>
+            <div id="he-plugin-simple"></div>
+        </div>
+    </div>
+</body>
+<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script src="../axios.js"></script>
+<script src="../jquery.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/biu.js"></script>
+<script>
+    var url = 'http://localhost:3300/biu'
+    axios.get(url).then(function(res) {
+        console.log(res)
+    })
+</script>
+</html>

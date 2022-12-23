@@ -1,0 +1,19 @@
+.center-box{
+    display: flex;
+    justify-content: space-between;
+}
+.swiper{
+    width:8rem;
+    height: 2.5rem;
+}
+.swiper-container{
+    height: 100%;
+}
+
+.swiper-slide > a > img {
+    height: 2.5rem;
+    width: 4rem;
+}
+.swiper-wrapper{
+    margin-top: 0;
+}
